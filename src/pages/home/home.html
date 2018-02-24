@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+<img alt="Blooplab" height="40"   src="assets/imgs/blooplabmobile.png" > 
+</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+ <ion-content fullscreen>
+ 
+    <ion-card *ngFor="let item of items">
+  <img src="{{item._embedded['wp:featuredmedia'][0].media_details.sizes.thumbnail.source_url}}"/>
+  <ion-card-content>
+    <ion-card-title>
+      {{item.title.rendered}}
+      </ion-card-title>
+  </ion-card-content>
+</ion-card>
+
+ 
+
+</ion-content>
